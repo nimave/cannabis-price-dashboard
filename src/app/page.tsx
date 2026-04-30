@@ -4,6 +4,7 @@ import { USMapRSM } from "@/components/USMapRSM";
 import { WorldMapRSM } from "@/components/WorldMapRSM";
 import { PriceTable } from "@/components/PriceTable";
 import { SourcesFooter } from "@/components/SourcesFooter";
+import { TopMoversChart } from "@/components/TopMoversChart";
 
 export default function Home() {
   return (
@@ -33,6 +34,11 @@ export default function Home() {
             <span className="text-xs text-zinc-500">Wholesale flower, $/lb</span>
           </div>
           <WorldMapRSM />
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-zinc-100">US states ranked</h2>
+          <TopMoversChart />
         </section>
 
         <section className="space-y-3">

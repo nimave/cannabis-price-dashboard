@@ -4,6 +4,7 @@ import { USMapD3 } from "@/components/USMapD3";
 import { WorldMapD3 } from "@/components/WorldMapD3";
 import { PriceTable } from "@/components/PriceTable";
 import { SourcesFooter } from "@/components/SourcesFooter";
+import { TopMoversChart } from "@/components/TopMoversChart";
 
 export default function D3Page() {
   return (
@@ -34,6 +35,11 @@ export default function D3Page() {
             <span className="text-xs text-zinc-500">Wholesale flower, $/lb</span>
           </div>
           <WorldMapD3 />
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-zinc-100">US states ranked</h2>
+          <TopMoversChart />
         </section>
 
         <section className="space-y-3">
